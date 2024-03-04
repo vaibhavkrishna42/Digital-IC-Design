@@ -1,0 +1,25 @@
+*** SPICE deck for cell Demo__inverter{lay} from library Demo
+*** Created on Wed Aug 16, 2023 17:10:48
+*** Last revised on Wed Aug 16, 2023 18:03:11
+*** Written on Wed Aug 16, 2023 18:04:27 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: Demo__inverter{lay}
+Mnmos@0 gnd INP OUT gnd nmos L=0.022U W=0.033U AS=0.003P AD=0.003P PS=0.242U PD=0.242U
+Mpmos@0 vdd INP OUT vdd pmos L=0.022U W=0.033U AS=0.003P AD=0.003P PS=0.242U PD=0.242U
+
+* Spice Code nodes in cell cell 'Demo__inverter{lay}'
+.include "E:\IITM Acads\Sem 5\DIC\Electric\22nm_HP.pm"
+v1 vdd gnd DC 0.8
+v2 INP gnd pwl(0 0 100p 0.8 1n 0.8 1.1n 0 2n 0)
+.tran 2.1n
+.meas TRAN result FIND time WHEN d(V(out))/d(V(inp))=-1 TD= 0n CROSS =1
+.meas TRAN outvolt FIND V(out)WHEN d(V(out))/d(V(inp))=-1 TD= 0n CROSS =1
+.meas TRAN involt FIND V(inp)WHEN d(V(out))/d(V(inp))=-1 TD= 0n CROSS =1
+.meas TRAN result2 FIND time WHEN d(V(out))/d(V(inp))=-1 TD=0n CROSS =2
+.meas TRAN outvolt2 FIND V(out) WHEN d(V(out))/d(V(inp))=-1 TD= 0n CROSS =2
+.meas TRAN involt2 FIND V(inp) WHEN d(V(out))/d(V(inp))=-1 TD= 0n CROSS =2
+.meas TRAN v_ol FIND V(inp) WHEN (V(out)/V(inp))=1 TD= 0n CROSS =1
+.END
+.END

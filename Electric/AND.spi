@@ -1,0 +1,26 @@
+*** SPICE deck for cell AND{lay} from library NAND2
+*** Created on Sun Sep 03, 2023 17:42:51
+*** Last revised on Sun Sep 03, 2023 17:59:10
+*** Written on Sun Sep 03, 2023 19:09:51 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.1FF
+
+*** TOP LEVEL CELL: AND{lay}
+Mnmos@0 net@13 A gnd gnd nmos L=0.022U W=0.176U AS=0.008P AD=0.007P PS=0.39U PD=0.253U
+Mnmos@1 intermediate B net@13 gnd nmos L=0.022U W=0.176U AS=0.007P AD=0.008P PS=0.253U PD=0.33U
+Mnmos@3 gnd intermediate Y gnd nmos L=0.022U W=0.088U AS=0.009P AD=0.008P PS=0.396U PD=0.39U
+Mpmos@0 intermediate A vdd vdd pmos L=0.022U W=0.176U AS=0.012P AD=0.008P PS=0.484U PD=0.33U
+Mpmos@1 vdd B intermediate vdd pmos L=0.022U W=0.176U AS=0.008P AD=0.012P PS=0.33U PD=0.484U
+Mpmos@3 vdd intermediate Y vdd pmos L=0.022U W=0.176U AS=0.009P AD=0.012P PS=0.396U PD=0.484U
+
+* Spice Code nodes in cell cell 'AND{lay}'
+.include "E:\IITM Acads\Sem 5\DIC\Electric\22nm_HP.pm"
+.param vdd = 0.8
+v1 vdd gnd DC {vdd}
+v2 A gnd PULSE(0 {vdd} 400p 100p 100p 400p 1n)
+v3 B gnd PULSE(0 {vdd} 900p 100p 100p 900p 2n)
+*.meas tran del_a_to_y
+*+ trig v(a_in) = ({vdd}/2) cross=3
+*+ targ v(y) = ({vdd}/2) cross=1
+.tran 0 3n
+.END

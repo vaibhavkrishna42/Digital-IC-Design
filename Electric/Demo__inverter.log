@@ -1,0 +1,30 @@
+Circuit: *** SPICE deck for cell Demo__inverter{lay} from library Demo
+
+Direct Newton iteration for .op point succeeded.
+
+result: time=4.15206e-011 at 4.15206e-011
+outvolt: v(out)=0.742081 at 4.15206e-011
+involt: v(inp)=0.332165 at 4.15206e-011
+result2: time=7.8534e-011 at 7.8534e-011
+outvolt2: v(out)=0.0234194 at 7.8534e-011
+involt2: v(inp)=0.628272 at 7.8534e-011
+v_ol: v(inp)=0.46771 at 5.84637e-011
+
+
+Date: Wed Aug 16 18:33:06 2023
+Total elapsed time: 0.080 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2131
+traniter = 2123
+tranpoints = 1055
+accept = 1055
+rejected = 0
+matrix size = 13
+fillins = 0
+solver = Normal
+Matrix Compiler1: 996 bytes object code size  0.2/0.2/[0.1]
+Matrix Compiler2: 1.30 KB object code size  0.1/0.3/[0.1]
+

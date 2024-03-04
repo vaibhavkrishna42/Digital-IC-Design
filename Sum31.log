@@ -1,0 +1,22 @@
+Circuit: *** SPICE deck for cell Sum31{lay} from library FINAL_PROJECT
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Mon Dec 04 23:39:06 2023
+Total elapsed time: 0.537 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3131
+traniter = 3108
+tranpoints = 1279
+accept = 1215
+rejected = 64
+matrix size = 192
+fillins = 0
+solver = Normal
+Thread vector: 153.6/44.1[4] 12.5/5.2[4] 5.9/2.3[4] 2.8/48.9[1]  2592/500
+Matrix Compiler1: 24.62 KB object code size  25.2/13.7/[3.8]
+Matrix Compiler2: 24.86 KB object code size  10.1/9.0/[3.0]
+

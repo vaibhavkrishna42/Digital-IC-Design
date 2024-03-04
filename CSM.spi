@@ -1,0 +1,252 @@
+*** SPICE deck for cell CSM{lay} from library FINAL_PROJECT
+*** Created on Tue Dec 05, 2023 20:03:18
+*** Last revised on Thu Dec 07, 2023 23:41:12
+*** Written on Thu Dec 07, 2023 23:41:22 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.01FF
+
+*** SUBCIRCUIT NAND2__NAND2 FROM CELL NAND2:NAND2{lay}
+.SUBCKT NAND2__NAND2 A B gnd vdd Y
+Mnmos@0 net@7 A gnd gnd nmos L=0.022U W=0.176U AS=0.011P AD=0.006P PS=0.473U PD=0.242U
+Mnmos@2 Y B net@7 gnd nmos L=0.022U W=0.176U AS=0.006P AD=0.007P PS=0.242U PD=0.319U
+Mpmos@0 Y A vdd vdd pmos L=0.022U W=0.176U AS=0.011P AD=0.007P PS=0.473U PD=0.319U
+Mpmos@1 vdd B Y vdd pmos L=0.022U W=0.176U AS=0.007P AD=0.011P PS=0.319U PD=0.473U
+.ENDS NAND2__NAND2
+
+*** SUBCIRCUIT Assignment3__assignment3_new FROM CELL Assignment3:assignment3_new{lay}
+.SUBCKT Assignment3__assignment3_new A B Ci Co_ gnd S_ vdd
+Mnmos@18 gnd Ci net@330 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.17U PD=0.15U
+Mnmos@19 net@330 Ci gnd gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.15U PD=0.17U
+Mnmos@20 gnd Ci net@330 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.17U PD=0.15U
+Mnmos@21 net@330 B gnd gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.15U PD=0.17U
+Mnmos@22 gnd B net@330 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.17U PD=0.15U
+Mnmos@23 net@330 B gnd gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.15U PD=0.17U
+Mnmos@24 Co_ A net@330 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.004P PS=0.17U PD=0.198U
+Mnmos@25 net@330 A Co_ gnd nmos L=0.022U W=0.088U AS=0.004P AD=0.003P PS=0.198U PD=0.17U
+Mnmos@26 Co_ A net@330 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.004P PS=0.17U PD=0.198U
+Mnmos@27 gnd B net@500 gnd nmos L=0.022U W=0.088U AS=0.002P AD=0.003P PS=0.149U PD=0.15U
+Mnmos@28 net@493 Ci gnd gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.15U PD=0.154U
+Mnmos@29 net@500 Ci Co_ gnd nmos L=0.022U W=0.088U AS=0.004P AD=0.002P PS=0.198U PD=0.149U
+Mnmos@30 gnd B net@493 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.154U PD=0.15U
+Mnmos@31 net@493 A gnd gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.15U PD=0.154U
+Mnmos@32 S_ Co_ net@493 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.005P PS=0.154U PD=0.238U
+Mnmos@33 net@364 A S_ gnd nmos L=0.022U W=0.066U AS=0.005P AD=0.002P PS=0.238U PD=0.115U
+Mnmos@34 net@365 B net@364 gnd nmos L=0.022U W=0.066U AS=0.002P AD=0.002P PS=0.115U PD=0.121U
+Mnmos@35 gnd Ci net@365 gnd nmos L=0.022U W=0.066U AS=0.002P AD=0.003P PS=0.121U PD=0.15U
+Mnmos@36 net@357 Ci gnd gnd nmos L=0.022U W=0.066U AS=0.003P AD=0.002P PS=0.15U PD=0.115U
+Mnmos@37 net@358 B net@357 gnd nmos L=0.022U W=0.066U AS=0.002P AD=0.002P PS=0.115U PD=0.115U
+Mnmos@38 S_ A net@358 gnd nmos L=0.022U W=0.066U AS=0.002P AD=0.005P PS=0.115U PD=0.238U
+Mpmos@15 vdd Ci net@317 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.268U PD=0.235U
+Mpmos@16 net@317 Ci vdd vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.235U PD=0.268U
+Mpmos@17 vdd Ci net@317 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.268U PD=0.235U
+Mpmos@18 net@317 B vdd vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.235U PD=0.268U
+Mpmos@19 vdd B net@317 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.268U PD=0.235U
+Mpmos@20 net@317 B vdd vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.235U PD=0.268U
+Mpmos@21 Co_ A net@317 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.004P PS=0.268U PD=0.198U
+Mpmos@22 net@317 A Co_ vdd pmos L=0.022U W=0.176U AS=0.004P AD=0.006P PS=0.198U PD=0.268U
+Mpmos@23 Co_ A net@317 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.004P PS=0.268U PD=0.198U
+Mpmos@24 Co_ Ci net@397 vdd pmos L=0.022U W=0.176U AS=0.003P AD=0.004P PS=0.237U PD=0.198U
+Mpmos@25 vdd B net@397 vdd pmos L=0.022U W=0.176U AS=0.003P AD=0.006P PS=0.237U PD=0.235U
+Mpmos@26 net@387 Ci vdd vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.235U PD=0.242U
+Mpmos@27 vdd B net@387 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.242U PD=0.235U
+Mpmos@28 net@387 A vdd vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.235U PD=0.242U
+Mpmos@29 S_ Co_ net@387 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.005P PS=0.242U PD=0.238U
+Mpmos@30 net@485 A S_ vdd pmos L=0.022U W=0.132U AS=0.005P AD=0.003P PS=0.238U PD=0.182U
+Mpmos@31 net@494 B net@485 vdd pmos L=0.022U W=0.132U AS=0.003P AD=0.004P PS=0.182U PD=0.187U
+Mpmos@32 vdd Ci net@494 vdd pmos L=0.022U W=0.132U AS=0.004P AD=0.006P PS=0.187U PD=0.235U
+Mpmos@33 net@362 Ci vdd vdd pmos L=0.022U W=0.132U AS=0.006P AD=0.003P PS=0.235U PD=0.182U
+Mpmos@34 net@368 B net@362 vdd pmos L=0.022U W=0.132U AS=0.003P AD=0.003P PS=0.182U PD=0.182U
+Mpmos@35 S_ A net@368 vdd pmos L=0.022U W=0.132U AS=0.003P AD=0.005P PS=0.182U PD=0.238U
+.ENDS Assignment3__assignment3_new
+
+*** SUBCIRCUIT NAND2__inverter FROM CELL NAND2:inverter{lay}
+.SUBCKT NAND2__inverter gnd INP OUT vdd
+Mnmos@0 gnd INP OUT gnd nmos L=0.022U W=0.088U AS=0.008P AD=0.005P PS=0.385U PD=0.297U
+Mpmos@0 vdd INP OUT vdd pmos L=0.022U W=0.176U AS=0.008P AD=0.011P PS=0.385U PD=0.473U
+.ENDS NAND2__inverter
+
+*** TOP LEVEL CELL: CSM{lay}
+XNAND2@8 x_7 y_0 gnd vdd net@70 NAND2__NAND2
+XNAND2@9 y_1 x_6 gnd vdd net@95 NAND2__NAND2
+XNAND2@10 y_1 x_5 gnd vdd net@75 NAND2__NAND2
+XNAND2@11 y_1 x_4 gnd vdd net@80 NAND2__NAND2
+XNAND2@12 y_1 x_3 gnd vdd net@86 NAND2__NAND2
+XNAND2@13 y_1 x_2 gnd vdd net@92 NAND2__NAND2
+XNAND2@14 y_1 x_1 gnd vdd net@99 NAND2__NAND2
+XNAND2@15 y_1 x_0 gnd vdd net@105 NAND2__NAND2
+XNAND2@16 y_1 x_7 gnd vdd net@130 NAND2__NAND2
+XNAND2@17 x_6 y_0 gnd vdd net@170 NAND2__NAND2
+XNAND2@18 x_5 y_0 gnd vdd net@180 NAND2__NAND2
+XNAND2@19 x_4 y_0 gnd vdd net@190 NAND2__NAND2
+XNAND2@20 x_3 y_0 gnd vdd net@199 NAND2__NAND2
+XNAND2@21 x_2 y_0 gnd vdd net@209 NAND2__NAND2
+XNAND2@22 x_1 y_0 gnd vdd net@219 NAND2__NAND2
+XNAND2@23 x_0 y_0 gnd vdd net@235 NAND2__NAND2
+XNAND2@24 y_2 x_6 gnd vdd net@831 NAND2__NAND2
+XNAND2@25 y_2 x_5 gnd vdd net@805 NAND2__NAND2
+XNAND2@26 y_2 x_4 gnd vdd net@817 NAND2__NAND2
+XNAND2@27 y_2 x_3 gnd vdd net@829 NAND2__NAND2
+XNAND2@28 y_2 x_2 gnd vdd net@841 NAND2__NAND2
+XNAND2@29 y_2 x_1 gnd vdd net@853 NAND2__NAND2
+XNAND2@30 y_2 x_0 gnd vdd net@865 NAND2__NAND2
+XNAND2@31 y_2 x_7 gnd vdd net@890 NAND2__NAND2
+XNAND2@32 y_3 x_6 gnd vdd net@1202 NAND2__NAND2
+XNAND2@33 y_3 x_5 gnd vdd net@1199 NAND2__NAND2
+XNAND2@34 y_3 x_4 gnd vdd net@1189 NAND2__NAND2
+XNAND2@35 y_3 x_3 gnd vdd net@1192 NAND2__NAND2
+XNAND2@36 y_3 x_2 gnd vdd net@1198 NAND2__NAND2
+XNAND2@37 y_3 x_1 gnd vdd net@1206 NAND2__NAND2
+XNAND2@38 y_3 x_0 gnd vdd net@1213 NAND2__NAND2
+XNAND2@39 y_3 x_7 gnd vdd net@1240 NAND2__NAND2
+XNAND2@40 y_4 x_6 gnd vdd net@1527 NAND2__NAND2
+XNAND2@41 y_4 x_5 gnd vdd net@1600 NAND2__NAND2
+XNAND2@42 y_4 x_4 gnd vdd net@1612 NAND2__NAND2
+XNAND2@43 y_4 x_3 gnd vdd net@1525 NAND2__NAND2
+XNAND2@44 y_4 x_2 gnd vdd net@1537 NAND2__NAND2
+XNAND2@45 y_4 x_1 gnd vdd net@1549 NAND2__NAND2
+XNAND2@46 y_4 x_0 gnd vdd net@1561 NAND2__NAND2
+XNAND2@47 y_4 x_7 gnd vdd net@1586 NAND2__NAND2
+XNAND2@56 y_5 x_6 gnd vdd net@1948 NAND2__NAND2
+XNAND2@57 y_5 x_5 gnd vdd net@1928 NAND2__NAND2
+XNAND2@58 y_5 x_4 gnd vdd net@1933 NAND2__NAND2
+XNAND2@59 y_5 x_3 gnd vdd net@1939 NAND2__NAND2
+XNAND2@60 y_5 x_2 gnd vdd net@1945 NAND2__NAND2
+XNAND2@61 y_5 x_1 gnd vdd net@1952 NAND2__NAND2
+XNAND2@62 y_5 x_0 gnd vdd net@1958 NAND2__NAND2
+XNAND2@63 y_5 x_7 gnd vdd net@1983 NAND2__NAND2
+XNAND2@64 y_6 x_6 gnd vdd net@2324 NAND2__NAND2
+XNAND2@65 y_6 x_5 gnd vdd net@2298 NAND2__NAND2
+XNAND2@66 y_6 x_4 gnd vdd net@2310 NAND2__NAND2
+XNAND2@67 y_6 x_3 gnd vdd net@2322 NAND2__NAND2
+XNAND2@68 y_6 x_2 gnd vdd net@2334 NAND2__NAND2
+XNAND2@69 y_6 x_1 gnd vdd net@2346 NAND2__NAND2
+XNAND2@70 y_6 x_0 gnd vdd net@2358 NAND2__NAND2
+XNAND2@71 y_6 x_7 gnd vdd net@2383 NAND2__NAND2
+XNAND2@72 y_7 x_6 gnd vdd net@2654 NAND2__NAND2
+XNAND2@73 y_7 x_5 gnd vdd net@2628 NAND2__NAND2
+XNAND2@74 y_7 x_4 gnd vdd net@2640 NAND2__NAND2
+XNAND2@75 y_7 x_3 gnd vdd net@2652 NAND2__NAND2
+XNAND2@76 y_7 x_2 gnd vdd net@2664 NAND2__NAND2
+XNAND2@77 y_7 x_1 gnd vdd net@2676 NAND2__NAND2
+XNAND2@78 y_7 x_0 gnd vdd net@2688 NAND2__NAND2
+XNAND2@79 y_7 x_7 gnd vdd net@2713 NAND2__NAND2
+Xassignme@0 net@142 net@95 vdd net@1143 gnd net@1131 vdd Assignment3__assignment3_new
+Xassignme@1 net@170 net@75 vdd net@1123 gnd net@1114 vdd Assignment3__assignment3_new
+Xassignme@2 net@180 net@80 vdd net@1104 gnd net@1095 vdd Assignment3__assignment3_new
+Xassignme@3 net@190 net@86 vdd net@1087 gnd net@1078 vdd Assignment3__assignment3_new
+Xassignme@4 net@199 net@92 vdd net@1070 gnd net@1063 vdd Assignment3__assignment3_new
+Xassignme@5 net@209 net@99 vdd net@1055 gnd net@1046 vdd Assignment3__assignment3_new
+Xassignme@6 net@219 net@105 vdd net@1038 gnd out_1 vdd Assignment3__assignment3_new
+Xassignme@7 net@134 gnd vdd net@1170 gnd net@1151 vdd Assignment3__assignment3_new
+Xassignme@8 net@1151 net@799 net@1143 net@1487 gnd net@1478 vdd Assignment3__assignment3_new
+Xassignme@9 net@1131 net@808 net@1123 net@1471 gnd net@1459 vdd Assignment3__assignment3_new
+Xassignme@10 net@1114 net@821 net@1104 net@1451 gnd net@1440 vdd Assignment3__assignment3_new
+Xassignme@11 net@1095 net@833 net@1087 net@1432 gnd net@1422 vdd Assignment3__assignment3_new
+Xassignme@12 net@1078 net@844 net@1070 net@1413 gnd net@1403 vdd Assignment3__assignment3_new
+Xassignme@13 net@1063 net@856 net@1055 net@1395 gnd net@1386 vdd Assignment3__assignment3_new
+Xassignme@14 net@1046 net@868 net@1038 net@1371 gnd net@898 vdd Assignment3__assignment3_new
+Xassignme@15 net@890 gnd net@1170 net@1508 gnd net@1497 vdd Assignment3__assignment3_new
+Xassignme@16 net@1497 net@1202 net@1487 net@1827 gnd net@1813 vdd Assignment3__assignment3_new
+Xassignme@17 net@1478 net@1199 net@1471 net@1807 gnd net@1798 vdd Assignment3__assignment3_new
+Xassignme@18 net@1459 net@1189 net@1451 net@1790 gnd net@1781 vdd Assignment3__assignment3_new
+Xassignme@19 net@1440 net@1192 net@1432 net@1775 gnd net@1766 vdd Assignment3__assignment3_new
+Xassignme@20 net@1422 net@1198 net@1413 net@1761 gnd net@1754 vdd Assignment3__assignment3_new
+Xassignme@21 net@1403 net@1206 net@1395 net@1750 gnd net@1741 vdd Assignment3__assignment3_new
+Xassignme@22 net@1386 net@1213 net@1371 net@1737 gnd out_3 vdd Assignment3__assignment3_new
+Xassignme@23 net@1245 vdd net@1508 net@1845 gnd net@1835 vdd Assignment3__assignment3_new
+Xassignme@24 net@1835 net@1570 net@1827 net@2258 gnd net@2249 vdd Assignment3__assignment3_new
+Xassignme@25 net@1813 net@1603 net@1807 net@2241 gnd net@2232 vdd Assignment3__assignment3_new
+Xassignme@26 net@1798 net@1616 net@1790 net@2226 gnd net@2217 vdd Assignment3__assignment3_new
+Xassignme@27 net@1781 net@1529 net@1775 net@2209 gnd net@2200 vdd Assignment3__assignment3_new
+Xassignme@28 net@1766 net@1540 net@1761 net@2196 gnd net@2187 vdd Assignment3__assignment3_new
+Xassignme@29 net@1754 net@1552 net@1750 net@2181 gnd net@2172 vdd Assignment3__assignment3_new
+Xassignme@30 net@1741 net@1564 net@1737 net@3410 gnd net@1627 vdd Assignment3__assignment3_new
+Xassignme@31 net@1586 gnd net@1845 net@2275 gnd net@2264 vdd Assignment3__assignment3_new
+Xassignme@40 net@2264 net@1948 net@2258 net@2589 gnd net@2580 vdd Assignment3__assignment3_new
+Xassignme@41 net@2249 net@1928 net@2241 net@2572 gnd net@2563 vdd Assignment3__assignment3_new
+Xassignme@42 net@2232 net@1933 net@2226 net@2555 gnd net@2546 vdd Assignment3__assignment3_new
+Xassignme@43 net@2217 net@1939 net@2209 net@2540 gnd net@2531 vdd Assignment3__assignment3_new
+Xassignme@44 net@2200 net@1945 net@2196 net@2525 gnd net@2518 vdd Assignment3__assignment3_new
+Xassignme@45 net@2187 net@1952 net@2181 net@2514 gnd net@2505 vdd Assignment3__assignment3_new
+Xassignme@46 net@2172 net@1958 net@3410 net@2501 gnd out_5 vdd Assignment3__assignment3_new
+Xassignme@47 net@1987 vdd net@2275 net@2607 gnd net@2597 vdd Assignment3__assignment3_new
+Xassignme@48 net@2597 net@2292 net@2589 net@2865 gnd net@2927 vdd Assignment3__assignment3_new
+Xassignme@49 net@2580 net@2301 net@2572 net@2859 gnd net@2916 vdd Assignment3__assignment3_new
+Xassignme@50 net@2563 net@2314 net@2555 net@2852 gnd net@2906 vdd Assignment3__assignment3_new
+Xassignme@51 net@2546 net@2326 net@2540 net@2846 gnd net@2895 vdd Assignment3__assignment3_new
+Xassignme@52 net@2531 net@2337 net@2525 net@2840 gnd net@2886 vdd Assignment3__assignment3_new
+Xassignme@53 net@2518 net@2349 net@2514 net@2832 gnd net@2877 vdd Assignment3__assignment3_new
+Xassignme@54 net@2505 net@2361 net@2501 net@2826 gnd net@2391 vdd Assignment3__assignment3_new
+Xassignme@55 net@2383 gnd net@2607 net@2871 gnd net@2938 vdd Assignment3__assignment3_new
+Xassignme@56 net@2938 net@2622 net@2865 net@3290 gnd net@3260 vdd Assignment3__assignment3_new
+Xassignme@57 net@2927 net@2631 net@2859 net@3242 gnd net@3219 vdd Assignment3__assignment3_new
+Xassignme@58 net@2916 net@2644 net@2852 net@3215 gnd net@3180 vdd Assignment3__assignment3_new
+Xassignme@59 net@2906 net@2656 net@2846 net@3158 gnd net@3126 vdd Assignment3__assignment3_new
+Xassignme@60 net@2895 net@2667 net@2840 net@3118 gnd net@3071 vdd Assignment3__assignment3_new
+Xassignme@61 net@2886 net@2679 net@2832 net@3043 gnd net@3019 vdd Assignment3__assignment3_new
+Xassignme@62 net@2877 net@2691 net@2826 net@2997 gnd out_7 vdd Assignment3__assignment3_new
+Xassignme@63 net@2713 vdd net@2871 net@3328 gnd net@3298 vdd Assignment3__assignment3_new
+Xassignme@64 net@3282 net@3298 net@3290 net@3319 gnd net@3309 vdd Assignment3__assignment3_new
+Xassignme@65 net@3319 gnd net@3338 Carry_out gnd out_15 vdd Assignment3__assignment3_new
+Xassignme@66 net@3202 net@3219 net@3215 net@3234 gnd net@3228 vdd Assignment3__assignment3_new
+Xassignme@67 net@3234 net@3269 net@3250 net@3282 gnd out_13 vdd Assignment3__assignment3_new
+Xassignme@68 net@3107 net@3126 net@3118 net@3150 gnd net@3135 vdd Assignment3__assignment3_new
+Xassignme@69 net@3150 net@3189 net@3166 net@3202 gnd out_11 vdd Assignment3__assignment3_new
+Xassignme@70 net@3019 net@2997 gnd net@3032 gnd net@3005 vdd Assignment3__assignment3_new
+Xassignme@71 net@3032 net@3086 net@3056 net@3107 gnd out_9 vdd Assignment3__assignment3_new
+Xinverter@1 gnd net@70 net@142 vdd NAND2__inverter
+Xinverter@2 gnd net@130 net@134 vdd NAND2__inverter
+Xinverter@3 gnd net@235 out_0 vdd NAND2__inverter
+Xinverter@4 gnd net@831 net@799 vdd NAND2__inverter
+Xinverter@5 gnd net@805 net@808 vdd NAND2__inverter
+Xinverter@6 gnd net@817 net@821 vdd NAND2__inverter
+Xinverter@7 gnd net@829 net@833 vdd NAND2__inverter
+Xinverter@8 gnd net@841 net@844 vdd NAND2__inverter
+Xinverter@9 gnd net@853 net@856 vdd NAND2__inverter
+Xinverter@10 gnd net@865 net@868 vdd NAND2__inverter
+Xinverter@11 gnd net@898 out_2 vdd NAND2__inverter
+Xinverter@12 gnd net@1240 net@1245 vdd NAND2__inverter
+Xinverter@13 gnd net@1527 net@1570 vdd NAND2__inverter
+Xinverter@14 gnd net@1600 net@1603 vdd NAND2__inverter
+Xinverter@15 gnd net@1612 net@1616 vdd NAND2__inverter
+Xinverter@16 gnd net@1525 net@1529 vdd NAND2__inverter
+Xinverter@17 gnd net@1537 net@1540 vdd NAND2__inverter
+Xinverter@18 gnd net@1549 net@1552 vdd NAND2__inverter
+Xinverter@19 gnd net@1561 net@1564 vdd NAND2__inverter
+Xinverter@20 gnd net@1627 out_4 vdd NAND2__inverter
+Xinverter@22 gnd net@1983 net@1987 vdd NAND2__inverter
+Xinverter@23 gnd net@2324 net@2292 vdd NAND2__inverter
+Xinverter@24 gnd net@2298 net@2301 vdd NAND2__inverter
+Xinverter@25 gnd net@2310 net@2314 vdd NAND2__inverter
+Xinverter@26 gnd net@2322 net@2326 vdd NAND2__inverter
+Xinverter@27 gnd net@2334 net@2337 vdd NAND2__inverter
+Xinverter@28 gnd net@2346 net@2349 vdd NAND2__inverter
+Xinverter@29 gnd net@2358 net@2361 vdd NAND2__inverter
+Xinverter@30 gnd net@2391 out_6 vdd NAND2__inverter
+Xinverter@31 gnd net@2654 net@2622 vdd NAND2__inverter
+Xinverter@32 gnd net@2628 net@2631 vdd NAND2__inverter
+Xinverter@33 gnd net@2640 net@2644 vdd NAND2__inverter
+Xinverter@34 gnd net@2652 net@2656 vdd NAND2__inverter
+Xinverter@35 gnd net@2664 net@2667 vdd NAND2__inverter
+Xinverter@36 gnd net@2676 net@2679 vdd NAND2__inverter
+Xinverter@37 gnd net@2688 net@2691 vdd NAND2__inverter
+Xinverter@38 gnd net@3309 out_14 vdd NAND2__inverter
+Xinverter@41 gnd net@3328 net@3338 vdd NAND2__inverter
+Xinverter@43 gnd net@3228 out_12 vdd NAND2__inverter
+Xinverter@44 gnd net@3242 net@3250 vdd NAND2__inverter
+Xinverter@45 gnd net@3260 net@3269 vdd NAND2__inverter
+Xinverter@46 gnd net@3135 out_10 vdd NAND2__inverter
+Xinverter@47 gnd net@3158 net@3166 vdd NAND2__inverter
+Xinverter@48 gnd net@3180 net@3189 vdd NAND2__inverter
+Xinverter@49 gnd net@3005 out_8 vdd NAND2__inverter
+Xinverter@50 gnd net@3043 net@3056 vdd NAND2__inverter
+Xinverter@51 gnd net@3071 net@3086 vdd NAND2__inverter
+
+* Spice Code nodes in cell cell 'CSM{lay}'
+.include "E:\IITM Acads\Sem 5\DIC\Electric\22nm_HP.pm"
+*.param vdd = 0.8
+*v1 vdd gnd DC {vdd}
+*v2 A gnd PULSE(0 {vdd} 400p 100p 100p 400p 1n)
+*v3 B gnd PULSE(0 {vdd} 900p 100p 100p 900p 2n)
+*v4 Ci gnd PULSE(0 {vdd} 1900p 100p 100p 1900p 4n)
+*.tran 0 8n

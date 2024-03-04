@@ -1,0 +1,84 @@
+*** SPICE deck for cell Sum31{lay} from library FINAL_PROJECT
+*** Created on Wed Oct 25, 2023 15:44:13
+*** Last revised on Mon Dec 04, 2023 23:31:04
+*** Written on Mon Dec 04, 2023 23:39:05 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.01FF
+***    P-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    N-Active:	areacap=0.9FF/um^2,	edgecap=0.0FF/um,	res=3.0ohms/sq
+***    Polysilicon-1:	areacap=0.1467FF/um^2,	edgecap=0.0608FF/um,	res=6.2ohms/sq
+***    Polysilicon-2:	areacap=1.0FF/um^2,	edgecap=0.0FF/um,	res=50.0ohms/sq
+***    Transistor-Poly:	areacap=0.09FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Poly-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.2ohms/sq
+***    Active-Cut:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=2.5ohms/sq
+***    Metal-1:	areacap=0.1209FF/um^2,	edgecap=0.1104FF/um,	res=0.078ohms/sq
+***    Via1:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+***    Metal-2:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via2:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.9ohms/sq
+***    Metal-3:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via3:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-4:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via4:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-5:	areacap=0.0843FF/um^2,	edgecap=0.0974FF/um,	res=0.078ohms/sq
+***    Via5:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=0.8ohms/sq
+***    Metal-6:	areacap=0.0423FF/um^2,	edgecap=0.1273FF/um,	res=0.036ohms/sq
+***    Hi-Res:	areacap=0.0FF/um^2,	edgecap=0.0FF/um,	res=1.0ohms/sq
+
+*** TOP LEVEL CELL: Sum31{lay}
+Mnmos@0 gnd A net@6 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.17U PD=0.15U
+Mnmos@1 net@6 A gnd gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.15U PD=0.17U
+Mnmos@2 gnd A net@6 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.17U PD=0.15U
+Mnmos@3 net@6 B gnd gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.15U PD=0.17U
+Mnmos@4 gnd B net@6 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.17U PD=0.15U
+Mnmos@5 net@6 B gnd gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.15U PD=0.17U
+Mnmos@6 Co_ Ci net@6 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.004P PS=0.17U PD=0.198U
+Mnmos@7 net@6 Ci Co_ gnd nmos L=0.022U W=0.088U AS=0.004P AD=0.003P PS=0.198U PD=0.17U
+Mnmos@8 Co_ Ci net@6 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.004P PS=0.17U PD=0.198U
+Mnmos@10 gnd B net@276 gnd nmos L=0.022U W=0.088U AS=0.002P AD=0.003P PS=0.149U PD=0.15U
+Mnmos@11 net@257 A gnd gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.15U PD=0.154U
+Mnmos@12 net@276 A Co_ gnd nmos L=0.022U W=0.088U AS=0.004P AD=0.002P PS=0.198U PD=0.149U
+Mnmos@13 gnd B net@257 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.154U PD=0.15U
+Mnmos@14 net@257 Ci gnd gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.003P PS=0.15U PD=0.154U
+Mnmos@15 S_ Co_ net@257 gnd nmos L=0.022U W=0.088U AS=0.003P AD=0.005P PS=0.154U PD=0.238U
+Mnmos@16 net@144 Ci S_ gnd nmos L=0.022U W=0.066U AS=0.005P AD=0.002P PS=0.238U PD=0.115U
+Mnmos@17 net@145 B net@144 gnd nmos L=0.022U W=0.066U AS=0.002P AD=0.002P PS=0.115U PD=0.121U
+Mnmos@18 gnd A net@145 gnd nmos L=0.022U W=0.066U AS=0.002P AD=0.003P PS=0.121U PD=0.15U
+Mnmos@19 net@138 A gnd gnd nmos L=0.022U W=0.066U AS=0.003P AD=0.002P PS=0.15U PD=0.115U
+Mnmos@20 net@139 B net@138 gnd nmos L=0.022U W=0.066U AS=0.002P AD=0.002P PS=0.115U PD=0.115U
+Mnmos@21 S_ Ci net@139 gnd nmos L=0.022U W=0.066U AS=0.002P AD=0.005P PS=0.115U PD=0.238U
+Mpmos@0 vdd A net@0 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.268U PD=0.235U
+Mpmos@1 net@0 A vdd vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.235U PD=0.268U
+Mpmos@2 vdd A net@0 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.268U PD=0.235U
+Mpmos@3 net@0 B vdd vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.235U PD=0.268U
+Mpmos@4 vdd B net@0 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.268U PD=0.235U
+Mpmos@5 net@0 B vdd vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.235U PD=0.268U
+Mpmos@6 Co_ Ci net@0 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.004P PS=0.268U PD=0.198U
+Mpmos@7 net@0 Ci Co_ vdd pmos L=0.022U W=0.176U AS=0.004P AD=0.006P PS=0.198U PD=0.268U
+Mpmos@8 Co_ Ci net@0 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.004P PS=0.268U PD=0.198U
+Mpmos@10 Co_ A net@176 vdd pmos L=0.022U W=0.176U AS=0.003P AD=0.004P PS=0.237U PD=0.198U
+Mpmos@11 vdd B net@176 vdd pmos L=0.022U W=0.176U AS=0.003P AD=0.006P PS=0.237U PD=0.235U
+Mpmos@12 net@166 A vdd vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.235U PD=0.242U
+Mpmos@13 vdd B net@166 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.242U PD=0.235U
+Mpmos@14 net@166 Ci vdd vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.006P PS=0.235U PD=0.242U
+Mpmos@15 S_ Co_ net@166 vdd pmos L=0.022U W=0.176U AS=0.006P AD=0.005P PS=0.242U PD=0.238U
+Mpmos@16 net@261 Ci S_ vdd pmos L=0.022U W=0.132U AS=0.005P AD=0.003P PS=0.238U PD=0.182U
+Mpmos@17 net@270 B net@261 vdd pmos L=0.022U W=0.132U AS=0.003P AD=0.004P PS=0.182U PD=0.187U
+Mpmos@18 vdd A net@270 vdd pmos L=0.022U W=0.132U AS=0.004P AD=0.006P PS=0.187U PD=0.235U
+Mpmos@19 net@142 A vdd vdd pmos L=0.022U W=0.132U AS=0.006P AD=0.003P PS=0.235U PD=0.182U
+Mpmos@20 net@148 B net@142 vdd pmos L=0.022U W=0.132U AS=0.003P AD=0.003P PS=0.182U PD=0.182U
+Mpmos@21 S_ Ci net@148 vdd pmos L=0.022U W=0.132U AS=0.003P AD=0.005P PS=0.182U PD=0.238U
+** Extracted Parasitic Capacitors ***
+** Extracted Parasitic Resistors ***
+
+* Spice Code nodes in cell cell 'Sum31{lay}'
+*.include "E:\IITM Acads\Sem 5\DIC\Electric\22nm_HP.pm"
+*.param vdd = 0.8
+*v1 vdd gnd DC {vdd}
+v2 A gnd PULSE(0 {vdd} 400p 100p 100p 400p 1n)
+v3 B gnd PULSE(0 {vdd} 900p 100p 100p 900p 2n)
+v4 Ci gnd PULSE(0 {vdd} 1900p 100p 100p 1900p 4n)
+.tran 0 8n
+.include "E:\IITM Acads\Sem 5\DIC\Electric\22nm_HP.pm"
+.param vdd = 0.8
+v1 vdd gnd DC {vdd}
+.END

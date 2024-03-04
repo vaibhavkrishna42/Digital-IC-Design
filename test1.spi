@@ -1,0 +1,142 @@
+*** SPICE deck for cell test1{sch} from library InputOrdering-test
+*** Created on Sun Oct 29, 2023 14:26:53
+*** Last revised on Sun Oct 29, 2023 17:33:40
+*** Written on Sun Oct 29, 2023 17:33:42 by Electric VLSI Design System, version 9.07
+*** Layout tech: mocmos, foundry MOSIS
+*** UC SPICE *** , MIN_RESIST 4.0, MIN_CAPAC 0.01FF
+
+*** SUBCIRCUIT Sum_Combinations__Sum33 FROM CELL Sum_Combinations:Sum33{sch}
+.SUBCKT Sum_Combinations__Sum33 A B Ci Co_ S_
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 net@2 A gnd gnd nmos L=0.022U W=0.088U
+Mnmos@1 net@2 A gnd gnd nmos L=0.022U W=0.088U
+Mnmos@2 net@2 A gnd gnd nmos L=0.022U W=0.088U
+Mnmos@3 net@2 B gnd gnd nmos L=0.022U W=0.088U
+Mnmos@4 net@2 B gnd gnd nmos L=0.022U W=0.088U
+Mnmos@5 net@2 B gnd gnd nmos L=0.022U W=0.088U
+Mnmos@6 net@2 Ci gnd gnd nmos L=0.022U W=0.088U
+Mnmos@7 net@2 Ci gnd gnd nmos L=0.022U W=0.088U
+Mnmos@8 net@2 Ci gnd gnd nmos L=0.022U W=0.088U
+Mnmos@9 S_ Co_ net@2 gnd nmos L=0.022U W=0.088U
+Mnmos@10 S_ Co_ net@2 gnd nmos L=0.022U W=0.088U
+Mnmos@11 S_ Co_ net@2 gnd nmos L=0.022U W=0.088U
+Mnmos@12 S_ Ci net@78 gnd nmos L=0.022U W=0.066U
+Mnmos@13 S_ Ci net@78 gnd nmos L=0.022U W=0.066U
+Mnmos@14 net@78 B net@83 gnd nmos L=0.022U W=0.066U
+Mnmos@15 net@78 B net@83 gnd nmos L=0.022U W=0.066U
+Mnmos@16 net@83 A gnd gnd nmos L=0.022U W=0.066U
+Mnmos@17 net@83 A gnd gnd nmos L=0.022U W=0.066U
+Mnmos@18 Co_ A net@120 gnd nmos L=0.022U W=0.088U
+Mnmos@19 net@120 B gnd gnd nmos L=0.022U W=0.088U
+Mnmos@20 net@96 A gnd gnd nmos L=0.022U W=0.088U
+Mnmos@21 net@96 A gnd gnd nmos L=0.022U W=0.088U
+Mnmos@22 net@96 A gnd gnd nmos L=0.022U W=0.088U
+Mnmos@23 net@96 B gnd gnd nmos L=0.022U W=0.088U
+Mnmos@24 net@96 B gnd gnd nmos L=0.022U W=0.088U
+Mnmos@25 net@96 B gnd gnd nmos L=0.022U W=0.088U
+Mnmos@26 Co_ Ci net@96 gnd nmos L=0.022U W=0.088U
+Mnmos@27 Co_ Ci net@96 gnd nmos L=0.022U W=0.088U
+Mnmos@28 Co_ Ci net@96 gnd nmos L=0.022U W=0.088U
+Mpmos@0 vdd A net@66 vdd pmos L=0.022U W=0.176U
+Mpmos@1 vdd A net@66 vdd pmos L=0.022U W=0.176U
+Mpmos@2 vdd A net@66 vdd pmos L=0.022U W=0.176U
+Mpmos@3 vdd B net@66 vdd pmos L=0.022U W=0.176U
+Mpmos@4 vdd B net@66 vdd pmos L=0.022U W=0.176U
+Mpmos@5 vdd B net@66 vdd pmos L=0.022U W=0.176U
+Mpmos@6 vdd Ci net@66 vdd pmos L=0.022U W=0.176U
+Mpmos@7 vdd Ci net@66 vdd pmos L=0.022U W=0.176U
+Mpmos@8 vdd Ci net@66 vdd pmos L=0.022U W=0.176U
+Mpmos@9 net@66 Co_ S_ vdd pmos L=0.022U W=0.176U
+Mpmos@10 net@66 Co_ S_ vdd pmos L=0.022U W=0.176U
+Mpmos@11 net@66 Co_ S_ vdd pmos L=0.022U W=0.176U
+Mpmos@12 net@57 Ci S_ vdd pmos L=0.022U W=0.132U
+Mpmos@13 net@57 Ci S_ vdd pmos L=0.022U W=0.132U
+Mpmos@14 net@62 B net@57 vdd pmos L=0.022U W=0.132U
+Mpmos@15 net@62 B net@57 vdd pmos L=0.022U W=0.132U
+Mpmos@16 vdd A net@62 vdd pmos L=0.022U W=0.132U
+Mpmos@17 vdd A net@62 vdd pmos L=0.022U W=0.132U
+Mpmos@18 vdd B net@137 vdd pmos L=0.022U W=0.176U
+Mpmos@19 net@137 A Co_ vdd pmos L=0.022U W=0.176U
+Mpmos@20 vdd A net@144 vdd pmos L=0.022U W=0.176U
+Mpmos@21 vdd A net@144 vdd pmos L=0.022U W=0.176U
+Mpmos@22 vdd A net@144 vdd pmos L=0.022U W=0.176U
+Mpmos@23 vdd B net@144 vdd pmos L=0.022U W=0.176U
+Mpmos@24 vdd B net@144 vdd pmos L=0.022U W=0.176U
+Mpmos@25 vdd B net@144 vdd pmos L=0.022U W=0.176U
+Mpmos@26 net@144 Ci Co_ vdd pmos L=0.022U W=0.176U
+Mpmos@27 net@144 Ci Co_ vdd pmos L=0.022U W=0.176U
+Mpmos@28 net@144 Ci Co_ vdd pmos L=0.022U W=0.176U
+.ENDS Sum_Combinations__Sum33
+
+*** SUBCIRCUIT NAND2__inverter FROM CELL NAND2:inverter{sch}
+.SUBCKT NAND2__inverter INP OUT
+** GLOBAL gnd
+** GLOBAL vdd
+Mnmos@0 OUT INP gnd gnd nmos L=0.022U W=0.088U
+Mpmos@0 vdd INP OUT vdd pmos L=0.022U W=0.176U
+
+* Spice Code nodes in cell cell 'NAND2:inverter{sch}'
+*.include "E:\IITM Acads\Sem 5\DIC\Electric\22nm_HP.pm"
+*v1 vdd gnd DC 0.8
+*v2 INP gnd pwl(0 0 100p 0.8 1n 0.8 1.1n 0 2n 0)
+*.tran 2.1n
+*.END
+.ENDS NAND2__inverter
+
+.global gnd vdd
+
+*** TOP LEVEL CELL: InputOrdering-test:test1{sch}
+XSum33@0 b1 c1 a1 Co_ S_ Sum_Combinations__Sum33
+Xinverter@0 net@10 b1 NAND2__inverter
+Xinverter@1 net@11 c1 NAND2__inverter
+Xinverter@2 net@12 a1 NAND2__inverter
+Xinverter@3 A net@10 NAND2__inverter
+Xinverter@4 B net@11 NAND2__inverter
+Xinverter@5 C net@12 NAND2__inverter
+
+* Spice Code nodes in cell cell 'InputOrdering-test:test1{sch}'
+.include "E:\IITM Acads\Sem 5\DIC\Electric\22nm_HP.pm"
+.param vdd = 0.8
+v1 vdd gnd DC {vdd}
+v2 C gnd PULSE(0 {vdd} 300p 100p 100p 300p 1n)
+v3 A gnd PULSE(0 {vdd} 900p 100p 100p 900p 2n)
+v4 B gnd PULSE(0 {vdd} 1900p 100p 100p 1900p 4n)
+.meas tran S00r
++trig v(a1) = ({vdd}/2) cross =1
++targ v(S_) = ({vdd}/2) cross =1
+.meas tran S00f
++trig v(a1) = ({vdd}/2) cross =2
++targ v(S_) = ({vdd}/2) cross =2
+.meas tran S01r
++trig v(a1) = ({vdd}/2) cross = 5
++targ v(S_) = ({vdd}/2) cross = 6
+.meas tran S01f
++trig v(a1) = ({vdd}/2) cross = 6
++targ v(S_) = ({vdd}/2) cross = 7
+.meas tran S10r
++trig v(a1) = ({vdd}/2) cross = 3
++targ v(S_) = ({vdd}/2) cross = 4
+.meas tran S10f
++trig v(a1) = ({vdd}/2) cross = 4
++targ v(S_) = ({vdd}/2) cross = 5
+.meas tran S11r
++trig v(a1) = ({vdd}/2) cross = 7
++targ v(S_) = ({vdd}/2) cross = 9
+.meas tran S11f
++trig v(a1) = ({vdd}/2) cross = 8
++targ v(S_) = ({vdd}/2) cross = 10
+.meas tran C01r
++trig v(a1) = ({vdd}/2) cross = 5
++targ v(Co_) = ({vdd}/2) cross = 3
+.meas tran C01f
++trig v(a1) = ({vdd}/2) cross = 6
++targ v(Co_) = ({vdd}/2) cross = 4
+.meas tran C10r
++trig v(a1) = ({vdd}/2) cross = 3
++targ v(Co_) = ({vdd}/2) cross = 1
+.meas tran C10f
++trig v(a1) = ({vdd}/2) cross = 4
++targ v(Co_) = ({vdd}/2) cross = 2
+.tran 4n
+.END

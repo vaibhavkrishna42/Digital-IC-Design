@@ -1,0 +1,25 @@
+Circuit: *** SPICE deck for cell testing{sch} from library FINAL_Project_Copy
+
+Per .tran options, skipping operating point for transient analysis.
+
+delay=-1e-009 FROM 1e-009 TO 6.20838e-017
+
+
+Date: Fri Dec 08 19:41:40 2023
+Total elapsed time: 10.921 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2580
+traniter = 2580
+tranpoints = 1049
+accept = 1049
+rejected = 0
+matrix size = 11593
+fillins = 1794
+solver = Normal
+Thread vector: 9846.7/2230.7[16] 1287.1/307.1[16] 508.8/168.8[16] 102.4/44.3[16]  2592/500
+Matrix Compiler1: 2.11 MB object code size  2026.0/851.3/[333.6]
+Matrix Compiler2: 1.50 MB object code size  1056.3/619.2/[197.2]
+
